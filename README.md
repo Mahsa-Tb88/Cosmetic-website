@@ -2,4 +2,4 @@
 
 I am completing this project using css and javascript.
 
-<img src="images/pic1.JPG" width="700"/>
+<img src="Images/pic1.JPG" width="700"/>
