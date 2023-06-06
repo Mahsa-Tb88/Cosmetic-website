@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Fredoka One", cursive;
+  font-family: "Kreon", serif;
+  background-color: #faf9f5;
+}
+.kk {
+  height: 300px;
+  margin-bottom: 8rem;
+  background-color: brown;
+}
+
+
+.analysis-desktop {
+    background-color:#79043c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+  height: 200px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+}
+.analysis-desktop-detail {
+    /* height: 30rem; */
+  width: 50%;
+  /* background-color: #79043c; */
+  padding: 0 1rem 2.3rem 1rem;
+  flex-shrink: 2;
+}
+.analysis-desktop-detail-title {
+  font-size: 2rem;
+  margin: 2rem 0 0.8rem 0;
+  color: #ffffff;
+}
+.analysis-desktop-detail-desc {
+  font-size: 1rem;
+  padding-bottom: 0.4rem;
+  color: #ffffff;
+}
+.analysis-desktop-detail-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+.analysis-desktop-detail-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.analysis-desktop-info-scan {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+.analysis-desktop-info-or {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+.analysis-desktop-info-btn {
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+.analysis-desktop-info-btn a {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.analysis-desktop-detail-img {
+  /* background-color: rebeccapurple; */
+  text-align: center;
+}
+.analysis-desktop-detail-img img {
+  width: 50%;
+}
+.analysis-desktop-img {
+ height: 100%;
+ width: 50%;
+
+  /* width: 50%; */
+  /* height: 25rem; */
+}
+.analysis-desktop-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+
+}
