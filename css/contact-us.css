@@ -427,7 +427,15 @@ body {
 .container {
   width: 100%;
 }
-
+.form-contact-container {
+  display: none;
+}
+.contact-us-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.6rem 0.8rem;
+}
 .contact-us {
   width: 85%;
   margin: 10rem auto;
@@ -448,16 +456,129 @@ body {
   color: #606060;
   font-size: 1.2rem;
 }
-.contact-us-form .contact-us-title {
-  font-size: 1rem;
+.contact-us-form {
+  position: relative;
+}
+.contact-us-form .form-info-title,
+.form-title-request {
+  margin-bottom: 3.4rem;
+}
+.contact-us-form .contact-us-form-title {
+  margin-bottom: 2.7rem;
+}
+.contact-us-form .contact-us-title-title {
+  font-size: 1.4rem;
   color: #a10550;
   margin-left: 0.8rem;
 }
-.contact-us-form .contact-us-title-icon {
-  font-size: 1.4rem;
+.contact-us-form .contact-us-title-envelope {
+  font-size: 1.2rem;
   color: #a10550;
 }
+.form-name {
+  width: 100%;
+}
+.form-subject,
+.form-name input,
+.form-country-select,
+.form-language,
+.form-email,
+.form-number {
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+.form-country-select-title{
+  width: 100%;
+}
+.form-name,
+.form-country,
+.form-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.form-subject-title , .form-country-select{
+  padding: 0 1.6rem 0.8rem 1.6rem;
+  border-bottom: 1px solid #d1cfcf;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.form-subject-title h4,
+.form-country-select-title h4 {
+  font-size: 1.4rem;
+  color: #606060;
+}
+.form-subject-title i,
+.form-country-select-title i {
+  font-size: 1rem;
+  color: #0c0c0c;
+}
+.form-subject-title-items,
+.form-country-title-items {
+  display: none;
+  transition-duration: 0.8s;
+}
+.form-subject-title-items li,
+.form-country-title-items li {
+  font-size: 1rem;
+  color: #606060;
+  padding: 0.2rem;
+  margin-bottom: 0.3rem;
+  transition-duration: 0.5s;
+}
+.form-subject-title-items li:hover,
+.form-country-title-items li:hover {
+  background-color: #606060;
+  color: #fff;
+}
+.form-name input {
+  border: none;
+  outline: none;
+  padding: 0 1.6rem 0.8rem 1.6rem;
+  border-bottom: 1px solid #d1cfcf;
+  background-color: transparent;
+}
+.form-language input,
+.form-email input,
+.form-number input {
+  border: none;
+  outline: none;
+  padding: 0 1.6rem 0.8rem 1.6rem;
+  background-color: transparent;
+}
+.form-language{
+  padding: 0 1.6rem 0.8rem 1.6rem;
+
+}
+.form-language,
+.form-email,
+.form-number {
+  border-bottom: 1px solid #d1cfcf;
+}
+.form-country-select-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr{
+  margin: 3rem 0;
+}
+
 @media (min-width: 768px) {
+  .form-contact-container {
+    display: block;
+  }
+  .contact-us-form .contact-us-form-dropleft {
+    display: none;
+  }
+  .contact-us-form .contact-us-form-title {
+    margin-bottom: 5.7rem;
+  }
   .contact-us-desc h2 {
     font-size: 3.2rem;
     margin-bottom: 2.4rem;
@@ -471,12 +592,104 @@ body {
   .contact-us-desc {
     margin-bottom: 4.8rem;
   }
-  .contact-us-form .contact-us-title {
+  .contact-us-form {
+    width: 82.6%;
+    margin: 0 auto;
+    /* background-color: #d1cfcf; */
+  }
+
+  .contact-us-form .contact-us-title-title {
     font-size: 2.4rem;
   }
-  .contact-us-form .contact-us-title-icon {
+  .contact-us-form .contact-us-title-envelope {
     font-size: 2rem;
-    color: #a10550;
+  }
+  .form-subject,
+  .form-country-select {
+    width: 49%;
+    margin-bottom: 2.4rem;
+  }
+  .form-name,
+  .form-country,
+  .form-address {
+    flex-direction: row;
+  }
+
+  .form-name input,
+  .form-country-select,
+  .form-language,
+  .form-email,
+  .form-number {
+    width: 49%;
+    margin-bottom: 2.4rem;
+  }
+  .form-info-title {
+    font-size: 2rem;
+    color: #0c0c0c;
+  }
+  .form-title-request {
+    font-size: 2rem;
+    color: #0c0c0c;
+    margin-top: 2rem;
+  }
+  .form-subject-title h4,
+  .form-country-select-title h4 {
+    font-size: 2rem;
+  }
+  .form-subject-title i,
+  .form-country-select-title i {
+    font-size: 1.5rem;
+    color: #0c0c0c;
+  }
+  .form-request-container h4 {
+    font-size: 2rem;
+    color: #606060;
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .form-request-btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.8rem;
+  }
+  .form-request-btns button {
+    padding: 0.8rem 0.35rem;
+    margin-right: 2rem;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgb(219, 218, 218);
+    transition-duration: 0.5s;
+  }
+  .form-request-btns button:hover {
+    background-color: #79043c;
+    color: #fff;
+  }
+  .form-request-text {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #606060;
+    margin-top: 0.8rem;
+    resize: none;
+  }
+  .form-checked {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.6rem;
+  }
+  .form-checked p {
+    font-size: 1.4rem;
+  }
+  .form-checked span {
+    border: 1px solid gray;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 1px;
+    margin-right: 0.5rem;
   }
 }
 /* footer */
