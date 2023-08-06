@@ -1,5 +1,8 @@
 # cosmetic-website
 
-I am completing this project using css and javascript.
+HTML and CSS.
+Responsive Website.
+I am going to make my website dynamic using React Liberary.
+https://mahsa-tb88.github.io/cosmetic-website/
 
 <img src="Images/pic1.JPG" width="700"/>
